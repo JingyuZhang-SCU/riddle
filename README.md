@@ -1,5 +1,7 @@
 # riddle — the diary of Tom Riddle
 
+English | **[简体中文](README.zh-CN.md)**
+
 Write on the page with your pen. After a pause, the diary **drinks your ink** —
 your words fade into the paper — the page thinks for a moment, and an answer
 writes itself back in a flowing hand, stroke by stroke, then fades away.

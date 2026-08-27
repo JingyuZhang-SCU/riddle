@@ -1,5 +1,7 @@
 # riddle-android — 汤姆·里德尔的日记，在你的安卓平板上
 
+简体中文 | [English](../README.md)
+
 把 [MaximeRivest/riddle](https://github.com/MaximeRivest/riddle)——reMarkable Paper Pro 上的汤姆·里德尔日记——移植到普通 Android 平板的原生应用。
 
 用触控笔在纸上写字，停笔片刻，墨迹被纸"吸走"——页面想了一会儿，Tom 的回答以手写字体逐字浮现。没有发光的屏幕 UI，没有键盘，没有聊天气泡，只有纸和墨。
