@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paper">#F7F1E3</color>
+    <color name="ink">#232633</color>
+    <color name="faded_ink">#8A8574</color>
+
+    <style name="DiaryTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">@color/paper</item>
+        <item name="android:navigationBarColor">@color/paper</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="SettingsTheme" parent="DiaryTheme" />
+</resources>

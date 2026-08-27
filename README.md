@@ -1,4 +1,4 @@
-# riddle — the diary of Tom Riddle, for the reMarkable Paper Pro
+# riddle — the diary of Tom Riddle
 
 Write on the page with your pen. After a pause, the diary **drinks your ink** —
 your words fade into the paper — the page thinks for a moment, and an answer
@@ -7,6 +7,49 @@ writes itself back in a flowing hand, stroke by stroke, then fades away.
 No screen glow, no keyboard, no chat UI. Just ink appearing on paper.
 
 _This is the diary from [the demo](https://x.com/MaximeRivest)._
+
+---
+
+## Two ways to open the diary
+
+| | 📱 **Android tablets** | 📃 **reMarkable Paper Pro** |
+|---|---|---|
+| Where | **this fork**, in [`android/`](android/) | [upstream original](https://github.com/MaximeRivest/riddle) |
+| Screen | any Android tablet, 120 Hz+ LCD | e-ink, vendor waveform engine |
+| Pen | stylus pressure via `MotionEvent` (tested: Xiaomi Focus Pen) | raw evdev, 4096-level pressure |
+| Install | build an APK in Android Studio, no root | developer mode + xovi/AppLoad |
+| LLM | any OpenAI-compatible vision API — **Xiaomi MiMo-V2.5 recommended** (cheapest multimodal) | OpenAI-compatible API or [pi](https://github.com/badlogic/pi-mono) |
+
+---
+
+## 📱 The Android port — this fork
+
+A native Android (Kotlin) rewrite of the diary, built and tested on a
+**Xiaomi Pad 6 Pro**. Everything that makes riddle *riddle* survives the trip:
+
+- **Pressure writing** with palm rejection — once the stylus is seen, fingers are ignored
+- The **ink-drinking fade** after 2.8 s of rest, then the page is handed to Tom
+- Replies written **character-by-character** in a handwriting font, with a slight per-glyph wobble
+- **The diary remembers** — pages live in local JSON, recent turns ride along with each request
+- A **memories browser** (☰): read past pages, tear one out with a long-press, or burn the whole book
+- **No fonts bundled** — import your own `.ttf` / `.otf` in Settings (default: system serif)
+
+No root, no developer mode, no e-ink. Build it yourself:
+
+```sh
+git clone https://github.com/JingyuZhang-SCU/riddle
+# open android/ in Android Studio → Build > Generate APKs
+```
+
+Full build & configuration instructions (中文)：**[android/README.md](android/README.md)**
+
+---
+
+# The original — riddle for the reMarkable Paper Pro
+
+_Everything below is the upstream documentation for the e-ink flavour,
+kept unchanged. See the [upstream repository](https://github.com/MaximeRivest/riddle)
+for releases and the remagic catalog._
 
 ### 🪄 New to this? Start here
 
@@ -236,10 +279,12 @@ riddle dies uncleanly. If anything wedges:
 ## Fonts
 
 The reply hand is [Dancing Script](https://github.com/googlefonts/DancingScript)
-(SIL OFL 1.1 — see `fonts/OFL.txt`).
+(SIL OFL 1.1 — see `fonts/OFL.txt`). The Android port bundles **no fonts** —
+users import their own.
 
 ## License
 
 MIT for everything in this repository (see `LICENSE`). The vendor libraries it
 interposes (`libqsgepaper.so`, Qt) are **not** included and must come from
-your own device/SDK.
+your own device/SDK. This fork's Android port is also MIT; it distributes no
+fonts or API keys of its own.
