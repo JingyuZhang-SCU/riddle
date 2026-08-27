@@ -18,3 +18,5 @@ captures/
 *.jks
 *.keystore
 keystore.properties
+# 签名构建输出
+app/release/
