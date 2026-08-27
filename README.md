@@ -8,6 +8,19 @@ No screen glow, no keyboard, no chat UI. Just ink appearing on paper.
 
 _This is the diary from [the demo](https://x.com/MaximeRivest)._
 
+## 📱 Android port — run the diary on your tablet
+
+**This fork adds [riddle-android](android/)** — a native Android port of the diary
+for ordinary tablets (built and tested on a Xiaomi Pad 6 Pro). Stylus pressure
+writing, the ink-drinking fade, character-by-character handwritten replies,
+local memories, a memories browser, and user-imported fonts. No root, no
+developer mode, no e-ink required — any OpenAI-compatible vision API works,
+with [Xiaomi MiMo-V2.5](https://mimo.mi.com/) as the recommended (cheapest
+multimodal) backend.
+
+See **[android/README.md](android/README.md)** (中文) for build and setup instructions.
+The original reMarkable-flavour instructions below are unchanged.
+
 ### 🪄 New to this? Start here
 
 You need a **reMarkable Paper Pro** in developer mode with a launcher installed.

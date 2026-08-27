@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Diary</string>
+    <string name="settings_title">日记的封印（API 设置）</string>
+    <string name="base_url">接口地址 Base URL</string>
+    <string name="api_key">API Key</string>
+    <string name="model">模型名（须支持图片输入）</string>
+    <string name="font_choice">Tom 的手迹</string>
+    <string name="font_serif">系统衬线</string>
+    <string name="font_import">＋ 添加字体（.ttf / .otf）</string>
+    <string name="font_delete_title">删除这枚字体？</string>
+    <string name="font_delete_msg">字体文件 %1$s 将被移除，正在使用它的页面会退回系统衬线。</string>
+    <string name="font_imported">已收下字体：%1$s</string>
+    <string name="save">保存</string>
+    <string name="memories_title">日记往事</string>
+    <string name="memories_empty">纸上还没有留下往事。</string>
+    <string name="memories_back">返回</string>
+    <string name="memories_clear">清空全部</string>
+    <string name="memories_delete_title">撕下这一页？</string>
+    <string name="memories_delete_msg">这段对话将从日记里永远消失。</string>
+    <string name="memories_clear_title">烧掉整本日记？</string>
+    <string name="memories_clear_msg">所有记忆都将化为灰烬，无法恢复。</string>
+    <string name="memories_torn">这一页已随灰烬飘散</string>
+    <string name="confirm_delete">撕下</string>
+    <string name="cancel">留下</string>
+</resources>
