@@ -52,6 +52,9 @@ git clone https://github.com/JingyuZhang-SCU/riddle
 | API Key | [platform.xiaomimimo.com](https://platform.xiaomimimo.com/#/console/api-keys) 用小米账号创建 |
 | 模型名 | `mimo-v2.5`（注意：`mimo-v2.5-pro` 不支持图片输入） |
 
+可通过邀请码获取Mimo10元免费试用：876VB7
+链接：https://platform.xiaomimimo.com?ref=876VB7 （注册后自动填入 · 体验金 40 天有效）
+
 其他可选：智谱 `glm-4v-flash`（免费额度）、阿里云 `qwen-vl-plus`、OpenRouter 等。
 
 ---
